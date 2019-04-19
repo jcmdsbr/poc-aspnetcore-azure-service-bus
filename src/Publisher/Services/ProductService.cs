@@ -20,12 +20,12 @@ namespace Publisher.Services
         public async Task Add(Product product)
         {
             var body = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(product));
-            var message = new Message(body) 
+            var message = new Message(body)
             {
                 Label = "Add"
             };
             await _client.SendAsync(message);
-        }        
+        }
         public void Dispose()
         {
             _client.CloseAsync().Wait();
