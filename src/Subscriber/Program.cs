@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Core.Configurations;
-using Core.Contracts;
-using Core.Services;
+using Core;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -34,7 +32,6 @@ namespace Subscriber
                                 .Configure(serviceBusConfigurations);
 
             services.AddSingleton(serviceBusConfigurations);
-            services.AddScoped<IProductHandlerService, ProductService>();
             services.AddHostedService<QueueListener>();
         }
 

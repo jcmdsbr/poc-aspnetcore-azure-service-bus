@@ -1,4 +1,4 @@
-namespace Core.Configurations
+namespace Core
 {
     public class ServiceBusConfiguration
     {

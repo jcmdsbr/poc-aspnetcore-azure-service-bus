@@ -1,6 +1,6 @@
 using System;
 
-namespace Core.Models {
+namespace Core {
     public class Product {
 
         public Product (Guid id, string description, DateTime createdAt) {

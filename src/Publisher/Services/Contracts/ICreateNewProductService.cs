@@ -1,8 +1,8 @@
 using System;
 using System.Threading.Tasks;
-using Core.Models;
+using Core;
 
-namespace Core.Contracts
+namespace Publisher.Services.Contracts
 {
     public interface ICreateNewProductService : IDisposable
     {
