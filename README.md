@@ -1,4 +1,4 @@
-# Sample Azure Service Bus in .Net Core :sunglasses:
+# Proof of Concept from Azure Service Bus in .Net Core :sunglasses:
 
 - This project shows how to implementation Azure Service Bus in .NET Core
 
